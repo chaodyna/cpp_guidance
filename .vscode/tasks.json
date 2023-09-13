@@ -1,0 +1,33 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build active file",
+            //"command": "/usr/bin/cpp",                  //不能用这命名, 否则你可能会i报错 gdb failed with message 'file format not recognized'
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                
+                // "`pkg-config","--libs","--cflags","opencv4`"	//这是添加第三方库代码，要添加什么库直接继续加就行，不要忘记了 ` 符号
+                //如下面再加个 gazebo11 第三方库(你得保证你安装的第三方库中含有.pc文件)
+              // "`pkg-config","--libs","--cflags","opencv4,gazebo11`"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}
