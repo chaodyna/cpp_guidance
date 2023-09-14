@@ -13,6 +13,8 @@ Sort Algorithm
 - [BucketSort](#complexity-analysis-of-bucket-sort-algorithm)
 - [MergeSort3Way](#how-the-above-code-works)
 - [QuickSort3Way](#quicksort3way)
+- [radixSort](#radixsort)
+- [topogicalSort](#topogicalsort)
 
 ## SelectionSort
 
@@ -184,3 +186,29 @@ By solving it using Master method, we get its complexity as O(n log 3n).
 #### Space Complexity: O(log N)
 
 - where ‘N’ is the number of elements in the given array/list.
+
+
+## radixSort
+
+- Complexity Analysis of Radix Sort:
+  - Time Complexity:
+
+  - Radix sort is a non-comparative integer sorting algorithm that sorts data with integer keys by grouping the keys by the individual digits which share the same significant position and value. It has a time complexity of O(d * (n + b)), where d is the number of digits, n is the number of elements, and b is the base of the number system being used.
+  - In practical implementations, radix sort is often faster than other comparison-based sorting algorithms, such as quicksort or merge sort, for large datasets, especially when the keys have many digits. However, its time complexity grows linearly with the number of digits, and so it is not as efficient for small datasets.
+- Auxiliary Space:
+
+  - Radix sort also has a space complexity of O(n + b), where n is the number of elements and b is the base of the number system. This space complexity comes from the need to create buckets for each digit value and to copy the elements back to the original array after each digit has been sorted.
+
+
+## TopogicalSort
+
+- 对一个有向无环图(Directed Acyclic Graph简称DAG)G进行拓扑排序，是将G中所有顶点排成一个线性序列，使得图中任意一对顶点u和v，若边(u,v)∈E(G)，则u在线性序列中出现在v之前。通常，这样的线性序列称为满足拓扑次序(Topological Order)的序列，简称拓扑序列。简单的说，由某个集合上的一个偏序得到该集合上的一个全序，这个操作称之为拓扑排序。
+
+- 无向图和有环的有向图没有拓扑排序拓扑排序其实就是离散上的偏序关系的一个应用
+
+1. 按照一定的顺序进行构造有向图，记录后个节点的入度；
+2. 从图中选择一个入度为0的顶点,输出该顶点;
+3. 从图中删除该顶点及所有与该顶点相连的边
+4. 重复上述两步，直至所有顶点输出。
+5. 或者当前图中不存在入度为0的顶点为止。此时可说明图中有环。
+6. 因此，也可以通过拓扑排序来判断一个图是否有环。
