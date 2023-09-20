@@ -1,4 +1,3 @@
-				
 #include <boost/mpi.hpp>
 #include <iostream>
 
