@@ -8,11 +8,11 @@ int main()
     cin >> n;
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < 64; j++) 
+        for (int j = 0; j < 64; j++)
             cin >> pieces[j];
-        if (status_map.count(pieces)) 
+        if (status_map.count(pieces))
             status_map[pieces] ++;
-        else 
+        else
             status_map[pieces] = 1;
         cout << status_map[pieces] << endl;
     }

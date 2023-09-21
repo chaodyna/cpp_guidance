@@ -5,18 +5,20 @@
       "includePath": [
         "${workspaceFolder}/**",
         "/usr/include",
-        "/usr/include/c++/5",
-        "/usr/include/x86_64-linux-gnu/c++/5",
-        "/usr/include/c++/5/backward",
-        "/usr/lib/gcc/x86_64-linux-gnu/5/include",
+        "/usr/include/c++/13",
+        "/usr/include/x86_64-linux-gnu/c++/13",
+        "/usr/include/c++/13/backward",
+        "/usr/lib/gcc/x86_64-linux-gnu/13/include",
         "/usr/local/include",
-        "/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed",
+        "/usr/lib/gcc/x86_64-linux-gnu/13/finclude",
         "/usr/include/x86_64-linux-gnu",
         "/usr/local/include/**",
-        "/usr/local/lib/**"
+        "/usr/local/lib/**",
+        "/opt/intel/oneapi/mpi/latest/include",
+        "/opt/intel/oneapi/mpi/latest/lib"
       ],
       "defines": [],
-      "compilerPath": "/usr/bin/gcc",
+      "compilerPath": "/opt/intel/oneapi/mpi/latest/bin/mpicc",
       "cStandard": "gnu11",
       "cppStandard": "gnu++17",
       "intelliSenseMode": "linux-gcc-x64"
