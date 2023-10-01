@@ -7,7 +7,16 @@
   },
   "clang-format.executable": "/usr/lib/llvm-16/bin/clang-format",
   "clang.executable": "/usr/lib/llvm-16/bin/clang",
-  "clangd.fallbackFlags": ["-std=c++17"],
+  "clangd.fallbackFlags": [
+    "-std=c++17",
+    "-I/usr/local/include/paraview-5.11",
+    "-I/opt/qt5/5.15.2/gcc_64/include",
+    "-I/opt/qt5/5.15.2/gcc_64/include/QtCore",
+    "-I/opt/qt5/5.15.2/gcc_64/include/QtGui",
+    "-I/opt/qt5/5.15.2/gcc_64/include/QtSql",
+    "-I/opt/qt5/5.15.2/gcc_64/include/QtWebengine",
+    "-I/opt/qt5/5.15.2/gcc_64/include/Qt3DCore"
+  ],
   // 开启粘贴保存自动格式化
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,

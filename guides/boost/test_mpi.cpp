@@ -1,5 +1,7 @@
 #include <boost/mpi.hpp>
 #include <iostream>
+#include <paraview-5.11/pqParaViewBehaviors.h>
+
 using namespace std;
 
 int main(int argc, char *argv[]) {
@@ -12,3 +14,4 @@ int main(int argc, char *argv[]) {
 
   return 0;
 }
+
