@@ -9,13 +9,25 @@
   "clang.executable": "/usr/lib/llvm-16/bin/clang",
   "clangd.fallbackFlags": [
     "-std=c++17",
-    "-I/usr/local/include/paraview-5.11",
-    "-I/opt/qt5/5.15.2/gcc_64/include",
-    "-I/opt/qt5/5.15.2/gcc_64/include/QtCore",
-    "-I/opt/qt5/5.15.2/gcc_64/include/QtGui",
-    "-I/opt/qt5/5.15.2/gcc_64/include/QtSql",
-    "-I/opt/qt5/5.15.2/gcc_64/include/QtWebengine",
-    "-I/opt/qt5/5.15.2/gcc_64/include/Qt3DCore"
+    "-I/opt/paraviewopenfoam510/include",
+    "-I/opt/Qt/5.15.2/gcc_64/include/QtWebengine",
+    "-I/opt/Qt/5.15.2/gcc_64/include",
+    "-I/opt/Qt/5.15.2/gcc_64/include/QtCore",
+    "-I/opt/Qt/5.15.2/gcc_64/include/QtGui",
+    "-I/opt/Qt/5.15.2/gcc_64/include/QtSql",
+    "-I/opt/Qt/5.15.2/gcc_64/include/QtWebengine",
+    "-I/opt/Qt/5.15.2/gcc_64/include/Qt3DCore",
+    "-I/opt/hdf5/include",
+    "-I/opt/eigen/include",
+    "-I/opt/ffmpeg/include",
+    "-I/opencv4/include",
+    "-I/opt/netcdf-c/4.9.2/include",
+    "-I/opt/jsoncpp/include",
+    "-I/opt/utf8cpp/include",
+    "-I/opt/nlohmannjson/include",
+    "-I/opt/tensorflow/include",
+    "-I/opt//vtk/vtk-9.2.6.data/headers",
+    "-I/opt/zstd/include"
   ],
   // 开启粘贴保存自动格式化
   "editor.formatOnPaste": true,
@@ -23,8 +35,8 @@
   "editor.formatOnType": true,
   "C_Cpp.errorSquiggles": "enabled",
   "C_Cpp.intelliSenseEngineFallback": "enabled",
-  "C_Cpp.intelliSenseEngine": "disabled",
-  "C_Cpp.autocomplete": "disabled", // So you don't get autocomplete from both extensions.
+  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.autocomplete": "default", // So you don't get autocomplete from both extensions.
   "clangd.path": "/usr/lib/llvm-16/bin/clangd",
   "clang-format.fallbackStyle": "LLVM",
   // Clangd 运行参数(在终端/命令行输入 clangd --help-list-hidden 可查看更多)
@@ -56,7 +68,7 @@
     // 默认格式化风格: 谷歌开源项目代码指南
     "--fallback-style=file",
     // 同时开启的任务数量
-    "-j=8",
+    "-j=4",
     // // pch优化的位置(memory 或 disk，选择memory会增加内存开销，但会提升性能) 推荐在板子上使用disk
     "--pch-storage=disk",
     // // 启用这项时，补全函数时，将会给参数提供占位符，键入后按 Tab 可以切换到下一占位符，乃至函数末
@@ -64,6 +76,6 @@
     "--function-arg-placeholders=false",
     // // compelie_commands.json 文件的目录位置(相对于工作区，由于 CMake 生成的该文件默认在 build 文件夹中，故设置为 build)
     "--compile-commands-dir=build"
-  ],
-  "cmake.sourceDirectory": "/home/lilongen/projects/gitProjects/cppFreshman/guides/cg/code/Assignment8"
+  ]
+  //"cmake.sourceDirectory": "/home/lilongen/projects/gitProjects/cppFreshman/guides/cg/code/Assignment8"
 }
