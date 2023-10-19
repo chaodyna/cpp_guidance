@@ -41,7 +41,9 @@
     "-I/opt/deal_II/include",
     "-I/opt/protobuf/include",
     "-I/opt/pnetcdf/include",
-    "-I/opt/freeglut3/include"
+    "-I/opt/freeglut3/include",
+    "-I/opt/ctemplate/include",
+    "-I/opt/cpp-httplib/include"
   ],
   // 开启粘贴保存自动格式化
   "editor.formatOnPaste": true,
