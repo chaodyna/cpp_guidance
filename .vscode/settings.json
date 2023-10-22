@@ -49,9 +49,9 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  "C_Cpp.errorSquiggles": "enabled",
+  "C_Cpp.errorSquiggles": "disabled",
   "C_Cpp.intelliSenseEngineFallback": "enabled",
-  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.intelliSenseEngine": "disabled",
   "C_Cpp.autocomplete": "default", // So you don't get autocomplete from both extensions.
   "clangd.path": "/usr/lib/llvm-16/bin/clangd",
   "clang-format.fallbackStyle": "LLVM",
@@ -92,6 +92,9 @@
     "--function-arg-placeholders=false",
     // // compelie_commands.json 文件的目录位置(相对于工作区，由于 CMake 生成的该文件默认在 build 文件夹中，故设置为 build)
     "--compile-commands-dir=build"
-  ]
+  ],
+  "files.watcherExclude": {
+    "**/target": true
+  }
   //"cmake.sourceDirectory": "/home/lilongen/projects/gitProjects/cppFreshman/guides/cg/code/Assignment8"
 }
