@@ -1,7 +1,7 @@
 {
   "tasks": [
     {
-      "type": "cppbuild",
+      "type": "shell",
       "label": "C/C++: g++ build active file",
       //"command": "/usr/bin/cpp",                  //不能用这命名, 否则你可能会i报错 gdb failed with message 'file format not recognized'
       "command": "/usr/bin/g++",
