@@ -59,8 +59,10 @@
         // "-fparse-all-comments",
         // 设置 C++ 的标准库为 libc++: Clang 对应的标准库
         "-stdlib=libc++",
+        // "-stdlib=libc",
         // 设置 C++ 版本为 c++17
         "-std=c++17",
+        // "-std=c99",
         // 为给定环境生成代码
         "--target=x86_64-linux",
         "-I/opt/paraviewopenfoam510/include",
@@ -140,7 +142,9 @@
         "-fsanitize=address",
         "-fsanitize=undefined",
         "-stdlib=libc++",
+        // "-stdlib=libc",
         "-std=c++17",
+        // "-std=c99",
         "--target=x86_64-linux",
         "-I/opt/paraviewopenfoam510/include",
         "-I/opt/Qt/5.15.2/gcc_64/include/QtWebengine",
@@ -153,7 +157,7 @@
         "-I/opt/hdf5/include",
         "-I/opt/eigen/include",
         "-I/opt/ffmpeg/include",
-        "-I/opencv4/include",
+        "-I/opt/opencv4/include",
         "-I/opt/netcdf-c/4.9.2/include",
         "-I/opt/jsoncpp/include",
         "-I/opt/utf8cpp/include",
