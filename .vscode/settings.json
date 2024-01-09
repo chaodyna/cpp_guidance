@@ -8,7 +8,7 @@
   "clang-format.executable": "/usr/lib/llvm-16/bin/clang-format",
   "clang.executable": "/usr/lib/llvm-16/bin/clang",
   "clangd.fallbackFlags": [
-    "-std=c99",
+    "-std=c++17",
     "-I/opt/paraviewopenfoam510/include",
     "-I/opt/Qt/5.15.2/gcc_64/include/QtWebengine",
     "-I/opt/Qt/5.15.2/gcc_64/include",
@@ -118,10 +118,7 @@
   "C_Cpp_Runner.compilerArgs": [],
   "C_Cpp_Runner.linkerArgs": [],
   "C_Cpp_Runner.includePaths": [],
-  "C_Cpp_Runner.includeSearch": [
-    "*",
-    "**/*"
-  ],
+  "C_Cpp_Runner.includeSearch": ["*", "**/*"],
   "C_Cpp_Runner.excludeSearch": [
     "**/build",
     "**/build/**",
