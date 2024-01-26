@@ -10,6 +10,8 @@
  */
 #include <bits/stdc++.h>
 
+
+// TODO:Hello
 void bubbleSort1A(int A[], int n) { // 起泡排序算法(版本1A):0<=n
   bool sorted = false; // 整体排序标志, 首先假定尚未排序
   while(!sorted) { // 在尚未确认已全局排序之前，逐趟进行扫描交换
