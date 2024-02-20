@@ -5,11 +5,11 @@
     "ostream": "cpp",
     "vector": "cpp"
   },
-  "clang-format.executable": "/usr/bin/clang-format",
-  "clang.executable": "/usr/bin/clang",
-  "clangd.fallbackFlags": [
-    "-std=c++17"
-  ],
+  // "clang-format.executable": "/usr/bin/clang-format",
+  "clang-format.executable": "E:\\intel\\oneapi\\compiler\\2024.0\\bin\\compiler\\clang-format.exe",
+  // "clang.executable": "/usr/bin/clang",
+  "clang.executable": "E:\\intel\\oneapi\\compiler\\2024.0\\bin\\compiler\\clang.exe",
+  "clangd.fallbackFlags": ["-std=c++17"],
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
@@ -17,7 +17,8 @@
   "C_Cpp.intelliSenseEngineFallback": "enabled",
   "C_Cpp.intelliSenseEngine": "disabled",
   "C_Cpp.autocomplete": "default", // So you don't get autocomplete from both extensions.
-  "clangd.path": "/usr/lib/llvm-16/bin/clangd",
+  // "clangd.path": "/usr/lib/llvm-16/bin/clangd",
+  "clangd.path": "E:\\intel\\oneapi\\compiler\\2024.0\\bin\\compiler\\clangd.exe",
   "clang-format.fallbackStyle": "LLVM",
   "clangd.arguments": [
     "--log=verbose",
@@ -27,7 +28,8 @@
     "--cross-file-rename",
     "--header-insertion=iwyu",
     "--header-insertion-decorators",
-    "--query-driver=/usr/lib/llvm-16/bin/clang++",
+    // "--query-driver=/usr/lib/llvm-16/bin/clang++",
+    "--query-driver=E:\\intel\\oneapi\\compiler\\2024.0\\bin\\compiler\\clang++.exe",
     // 在后台自动分析文件(基于 complie_commands，我们用CMake生成)
     "--background-index",
     "--clang-tidy",

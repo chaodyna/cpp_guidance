@@ -1,10 +1,13 @@
 // C++ program to implement iterative Binary Search
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 // An iterative binary search function.
-int binarySearchIterative(int arr[], int l, int r, int x) {
-  while (l <= r) {
+int binarySearchIterative(int arr[], int l, int r, int x)
+{
+  while (l <= r)
+  {
     int m = l + (r - l) / 2;
 
     // Check if x is present at mid
@@ -27,8 +30,10 @@ int binarySearchIterative(int arr[], int l, int r, int x) {
 // A recursive binary search function. It returns
 // location of x in given array arr[l..r] is present,
 // otherwise -1
-int binarySearchRecursive(int arr[], int l, int r, int x) {
-  if (r >= l) {
+int binarySearchRecursive(int arr[], int l, int r, int x)
+{
+  if (r >= l)
+  {
     int mid = l + (r - l) / 2;
 
     // If the element is present at the middle
@@ -51,7 +56,8 @@ int binarySearchRecursive(int arr[], int l, int r, int x) {
   return -1;
 }
 // Driver code
-int main(void) {
+int main(void)
+{
   int arr[] = {2, 3, 4, 10, 40};
   int x = 10;
   int n = sizeof(arr) / sizeof(arr[0]);
