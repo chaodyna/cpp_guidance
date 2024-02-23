@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+#include <vector>
+#include <string>
+#include <iostream>
 using namespace std;
 // 比较操作符A和操作符B的优先级
 bool opAisBiggerThanOpB(string opA, string opB)
@@ -8,8 +11,7 @@ bool opAisBiggerThanOpB(string opA, string opB)
     return true;
   }
   else
-  {
-    return false;
+  {    return false;
   }
 }
 
