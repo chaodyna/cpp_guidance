@@ -15,8 +15,8 @@ int countNum(vector<int>& nums) {
     for(int i = 0; i < n; ++i) {
         if(mymap[nums[i]] > n / 2) {
             ans = nums[i];
-	    break;
-	}
+            break;
+        }
     }
     return ans;
 }
@@ -27,9 +27,9 @@ int main() {
     string s;
     cin >> s;
     for(auto i : s) {
-        if(i >= '0' && i <= '9') {
+      if(i >= '0' && i <= '9') {
             nums.push_back((i-'0'));
-	}
+      }
     }
 
     int ans = countNum(nums);
